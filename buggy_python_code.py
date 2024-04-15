@@ -27,7 +27,7 @@ def fetch_website(urllib_version, url):
     if not isinstance(urllib_version, str):
         print('Urllib_version must be string')
         return
-    if not (urllib_version == '3' or urllib_version == '2'):
+    if not (urllib_version in ('2', '3')):
         print('Valid versions of urllib are 2 and 3. You entered:', urllib_version)
         return
     # Import the requested version (2 or 3) of urllib
